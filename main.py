@@ -113,7 +113,7 @@ async def set_role(update: Update, context: CallbackContext):
 # Основная функция для запуска основного бота
 def main():
     # Указываем токен основного бота
-    application = Application.builder().token("7978584231:AAFneaWEV_WG8JEipfCCdQuwAgImnAykVdw").build()
+    application = Application.builder().token("xxx").build()
 
     # Регистрация команд
     application.add_handler(CommandHandler("start", start))
