@@ -74,7 +74,7 @@ async def delete_user(update: Update, context: CallbackContext):
         # Используем метод ban_chat_member для удаления пользователя
         try:
             await context.application.bot.ban_chat_member(chat_id, user_id)
-            await update.message.reply_text(f"Пользователь @{username} забанен в чате {chat_id}.")
+            await update.message.reply_text(f"Пользователь @{username} удален из чата {chat_id}.")
         except Exception as e:
             logger.error(f"Ошибка при удалении пользователя {username} в чате {chat_id}: {e}")
             await update.message.reply_text(f"Не удалось удалить @{username} в чате {chat_id}. Ошибка: {e}")
