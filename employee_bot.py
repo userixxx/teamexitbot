@@ -72,7 +72,7 @@ async def search(update: Update, context: CallbackContext):
 # Основная функция для запуска второго бота
 def main():
     # Указываем токен второго бота для сотрудников
-    application = Application.builder().token("7238226805:AAGmBc-GCMZAUqKV2sbrqESg5wN5gmJ3QLk").build()
+    application = Application.builder().token("xxx").build()
 
     # Регистрация команд
     application.add_handler(CommandHandler("start", start))  # Команда для старта
